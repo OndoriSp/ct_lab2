@@ -2,7 +2,7 @@ from fastapi import FastAPI, Depends
 from sqlalchemy import create_engine, Column, Integer, select, update
 from sqlalchemy.orm import declarative_base, sessionmaker, Session
 
-DATABASE_URL = "mysql+mysqlconnector://root:root@localhost/webapp_db"
+DATABASE_URL = "mysql+mysqlconnector://njgakntoqo:$ELy$BXwgAuUAL76@ctlab2webapp-server.mysql.database.azure.com:3306/ctlab2webapp-database"
 
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
